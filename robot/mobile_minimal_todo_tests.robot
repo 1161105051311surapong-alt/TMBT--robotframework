@@ -49,7 +49,7 @@ Delete Existing Todo Item
     Wait Until Page Contains    Remove me
     Hide Keyboard
     Sleep    1s
-    Swipe By Percent    ${90}    ${15}    ${10}    ${15}    500 ms
+    Swipe By Percent    ${90}    ${15}    ${10}    ${15}    ${500}
     Wait Until Page Does Not Contain    Remove me
 
 Validate Required Todo Title
