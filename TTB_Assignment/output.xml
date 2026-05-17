@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.0 on win32)" generated="2026-05-17T01:14:28.203575" rpa="false" schemaversion="5">
+<suite id="s1" name="Mobile Minimal Todo Tests" source="C:\Users\acer\Desktop\TTB\TTB_Assignment\robot\mobile_minimal_todo_tests.robot">
+<test id="s1-t1" name="Validate Required Todo Title" line="55">
+<kw name="Open Minimal Todo App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>newCommandTimeout=120</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2026-05-17T01:14:28.607996" elapsed="6.060270"/>
+</kw>
+<status status="PASS" start="2026-05-17T01:14:28.607397" elapsed="6.061017"/>
+</kw>
+<kw name="Tap Add Todo">
+<kw name="Hide Keyboard" owner="AppiumLibrary">
+<doc>Hides the software keyboard on the device if it is currently visible.</doc>
+<status status="PASS" start="2026-05-17T01:14:34.669329" elapsed="0.383943"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2026-05-17T01:14:35.099123" level="INFO">criteria is com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</msg>
+<arg>${ADD_TASK_BUTTON}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-17T01:14:35.053430" elapsed="0.045787"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-17T01:14:35.100400" level="INFO">Clicking element 'id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB'.</msg>
+<msg time="2026-05-17T01:14:35.397447" level="INFO">criteria is com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</msg>
+<arg>${ADD_TASK_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-17T01:14:35.099376" elapsed="0.298172"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2026-05-17T01:14:37.843027" level="INFO">criteria is com.avjindersinghsekhon.minimaltodo:id/userToDoEditText
+criteria is com.avjindersinghsekhon.minimaltodo:id/userToDoEditText</msg>
+<arg>${TITLE_FIELD}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-17T01:14:35.397702" elapsed="2.445443"/>
+</kw>
+<status status="PASS" start="2026-05-17T01:14:34.668883" elapsed="3.174382"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-05-17T01:14:37.844925" level="INFO">Clicking element 'id=com.avjindersinghsekhon.minimaltodo:id/makeToDoFloatingActionButton'.</msg>
+<msg time="2026-05-17T01:14:39.465237" level="INFO">criteria is com.avjindersinghsekhon.minimaltodo:id/makeToDoFloatingActionButton</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-17T01:14:37.843627" elapsed="1.621719"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2026-05-17T01:14:40.941302" level="INFO">criteria is com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB
+criteria is com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB</msg>
+<arg>${ADD_TASK_BUTTON}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-17T01:14:39.465697" elapsed="1.475711"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2026-05-17T01:14:40.941960" elapsed="0.687134"/>
+</kw>
+<doc>Verify empty title cannot create a todo item.</doc>
+<status status="PASS" start="2026-05-17T01:14:28.606615" elapsed="13.022730"/>
+</test>
+<doc>Question 4: Minimal-Todo mobile automation using Robot Framework + AppiumLibrary.</doc>
+<status status="PASS" start="2026-05-17T01:14:28.205093" elapsed="13.425036"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Mobile Minimal Todo Tests" id="s1" pass="1" fail="0" skip="0">Mobile Minimal Todo Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

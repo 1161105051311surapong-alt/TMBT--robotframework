@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.0 on win32)" generated="2026-05-16T23:30:57.586342" rpa="false" schemaversion="5">
+<suite id="s1" name="TTB" source="C:\Users\acer\Desktop\TTB">
+<suite id="s1-s1" name="TTB Assignment" source="C:\Users\acer\Desktop\TTB\TTB_Assignment">
+<suite id="s1-s1-s1" name="Robot" source="C:\Users\acer\Desktop\TTB\TTB_Assignment\robot">
+<suite id="s1-s1-s1-s1" name="Mobile Minimal Todo Tests" source="C:\Users\acer\Desktop\TTB\TTB_Assignment\robot\mobile_minimal_todo_tests.robot">
+<test id="s1-s1-s1-s1-t1" name="TC-01 Create Todo Item Successfully" line="23">
+<kw name="Open Minimal Todo App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:30:58.505966" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.505205" elapsed="0.009730">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:30:58.515242" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:58.527079" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</msg>
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>newCommandTimeout=120</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.095188" elapsed="0.437053">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<status status="FAIL" start="2026-05-16T23:30:58.094380" elapsed="0.438185">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:30:58.534205" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.533891" elapsed="0.005214">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:30:58.539441" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:58.558813" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.533145" elapsed="0.032100">No application is open</status>
+</kw>
+<doc>Verify user can create a todo with title and description.</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.085816" elapsed="0.479796">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="TC-02 Create Todo With Reminder" line="31">
+<kw name="Open Minimal Todo App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:30:58.926386" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.925922" elapsed="0.006758">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:30:58.933016" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:58.943575" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</msg>
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>newCommandTimeout=120</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.627810" elapsed="0.327190">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<status status="FAIL" start="2026-05-16T23:30:58.627327" elapsed="0.328326">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:30:58.957007" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.956713" elapsed="0.006418">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:30:58.963395" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:58.981539" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.956288" elapsed="0.034938">No application is open</status>
+</kw>
+<doc>Verify user can create a todo with reminder enabled.</doc>
+<status status="FAIL" start="2026-05-16T23:30:58.591882" elapsed="0.399803">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-s1-s1-t3" name="TC-03 Edit Existing Todo Item" line="40">
+<kw name="Open Minimal Todo App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:30:59.322391" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.321819" elapsed="0.006719">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:30:59.328830" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:59.336389" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</msg>
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>newCommandTimeout=120</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.053272" elapsed="0.287757">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<status status="FAIL" start="2026-05-16T23:30:59.052872" elapsed="0.288387">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:30:59.342261" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.341997" elapsed="0.013511">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:30:59.355770" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:59.365271" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.341639" elapsed="0.028476">No application is open</status>
+</kw>
+<doc>Verify user can open an existing todo and update its title.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.019857" elapsed="0.350547">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-s1-s1-t4" name="TC-04 Delete Existing Todo Item" line="49">
+<kw name="Open Minimal Todo App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:30:59.694493" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.694057" elapsed="0.010238">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:30:59.704560" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:59.717834" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</msg>
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>newCommandTimeout=120</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.423105" elapsed="0.301433">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<status status="FAIL" start="2026-05-16T23:30:59.422488" elapsed="0.302304">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:30:59.726342" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.726045" elapsed="0.006194">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:30:59.732501" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:59.750819" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.725297" elapsed="0.032215">No application is open</status>
+</kw>
+<doc>Verify user can delete an existing todo item.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.400268" elapsed="0.357586">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-s1-s1-t5" name="TC-05 Validate Required Todo Title" line="57">
+<kw name="Open Minimal Todo App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:31:00.091688" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:31:00.091324" elapsed="0.005879">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:31:00.097539" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:31:00.108734" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</msg>
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>newCommandTimeout=120</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.824938" elapsed="0.288706">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<status status="FAIL" start="2026-05-16T23:30:59.823708" elapsed="0.290262">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-16T23:31:00.115327" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-16T23:31:00.115036" elapsed="0.004686">No application is open</status>
+</kw>
+<msg time="2026-05-16T23:31:00.119993" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:31:00.135624" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2026-05-16T23:31:00.114591" elapsed="0.026849">No application is open</status>
+</kw>
+<doc>Verify empty title cannot create a todo item.</doc>
+<status status="FAIL" start="2026-05-16T23:30:59.783938" elapsed="0.357837">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\acer\Desktop\TTB/app/minimal-todo.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\acer\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<doc>Question 4: Minimal-Todo mobile automation using Robot Framework + AppiumLibrary.</doc>
+<status status="FAIL" start="2026-05-16T23:30:57.676409" elapsed="2.490589"/>
+</suite>
+<status status="FAIL" start="2026-05-16T23:30:57.669974" elapsed="2.513314"/>
+</suite>
+<status status="FAIL" start="2026-05-16T23:30:57.664960" elapsed="2.523052"/>
+</suite>
+<status status="FAIL" start="2026-05-16T23:30:57.592624" elapsed="2.631130"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TTB" id="s1" pass="0" fail="5" skip="0">TTB</stat>
+<stat name="TTB Assignment" id="s1-s1" pass="0" fail="5" skip="0">TTB.TTB Assignment</stat>
+<stat name="Robot" id="s1-s1-s1" pass="0" fail="5" skip="0">TTB.TTB Assignment.Robot</stat>
+<stat name="Mobile Minimal Todo Tests" id="s1-s1-s1-s1" pass="0" fail="5" skip="0">TTB.TTB Assignment.Robot.Mobile Minimal Todo Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-05-16T23:30:58.515242" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:58.539441" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:58.933016" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:58.963395" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:59.328830" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:59.355770" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:59.704560" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:30:59.732501" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:31:00.097539" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-16T23:31:00.119993" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
