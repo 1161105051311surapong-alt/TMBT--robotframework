@@ -42,7 +42,7 @@ pipeline {
         stage('Send Result To Jenkins') {
             steps {
                 archiveArtifacts artifacts: 'results/**/*'
-                robot outputPath: 'results/mobile', logFileName: 'log.html', reportFileName: 'report.html', outputFileName: 'output.xml', onlyCriticalTests: false
+                robot outputPath: 'results/mobile', logFileName: 'log.html', reportFileName: 'report.html', outputFileName: 'output.xml', passThreshold: 0.0, unstableThreshold: 0.0
             }
         }
     }
