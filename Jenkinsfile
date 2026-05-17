@@ -41,8 +41,8 @@ pipeline {
 
         stage('Send Result To Jenkins') {
             steps {
-                archiveArtifacts artifacts: 'results/**/*.xml,results/**/*.html,results/**/*.png', allowEmptyArchive: true
-                robot outputPath: 'results', passThreshold: 100, unstableThreshold: 90
+                archiveArtifacts artifacts: 'results/**/*'
+                robot outputPath: 'results/mobile', logFileName: 'log.html', reportFileName: 'report.html', outputFileName: 'output.xml', onlyCriticalTests: false
             }
         }
     }
