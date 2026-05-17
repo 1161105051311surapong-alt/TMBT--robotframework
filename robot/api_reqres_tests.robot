@@ -6,7 +6,7 @@ Library             Collections
 
 *** Variables ***
 ${BASE_URL}     https://reqres.in
-${API_KEY}      %{REQRES_API_KEY=PUT_YOUR_REQRES_API_KEY_HERE}
+${API_KEY}      free_user_3DWiw2SgAZmzdEuUhWpleq3OHFi
 &{HEADERS}      x-api-key=${API_KEY}
 
 
