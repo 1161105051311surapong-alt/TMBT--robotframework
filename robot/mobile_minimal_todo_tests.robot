@@ -10,7 +10,7 @@ ${APPIUM_SERVER}            http://127.0.0.1:4723/wd/hub
 ${PLATFORM_NAME}            Android
 ${AUTOMATION_NAME}          UiAutomator2
 ${DEVICE_NAME}              Android Emulator
-${APP_PATH}                 C:/Users/acer/Desktop/TTB/TTB_Assignment/app/minimal-todo.apk
+${APP_PATH}                 C:/Users/acer/Desktop/TTB/app/minimal-todo.apk
 
 ${ADD_TASK_BUTTON}          id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB
 ${TITLE_FIELD}              id=com.avjindersinghsekhon.minimaltodo:id/userToDoEditText
