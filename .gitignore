@@ -1,0 +1,6 @@
+results/
+venv/
+*.html
+*.xml
+*.pyc
+.DS_Store

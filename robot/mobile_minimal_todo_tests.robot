@@ -6,11 +6,11 @@ Test Teardown       Close Application
 
 
 *** Variables ***
-${APPIUM_SERVER}            http://127.0.0.1:4723/wd/hub
+${APPIUM_SERVER}            http://localhost:4723
 ${PLATFORM_NAME}            Android
 ${AUTOMATION_NAME}          UiAutomator2
 ${DEVICE_NAME}              Android Emulator
-${APP_PATH}                 C:/Users/acer/Desktop/TTB/app/minimal-todo.apk
+${APP_PATH}                 ${EXECDIR}/app/minimal-todo.apk
 
 ${ADD_TASK_BUTTON}          id=com.avjindersinghsekhon.minimaltodo:id/addToDoItemFAB
 ${TITLE_FIELD}              id=com.avjindersinghsekhon.minimaltodo:id/userToDoEditText
